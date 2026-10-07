@@ -15,7 +15,7 @@ import { PHOTOS, type Photo } from './photos';
 
 export const SCHOOL = {
   name: 'SMP Sains Lombok Islamic School',
-  shortName: 'SMP Sains LIS',
+  shortName: 'SMP Sains',
   suffix: 'Lombok Islamic School',
   tagline: 'Sekolah sains terpadu berbasis IT di Lombok Barat',
   foundedYear: 2019,
@@ -24,7 +24,7 @@ export const SCHOOL = {
 export const CONTACT = {
   phoneDisplay: '0851-1969-4411',
   whatsappId: '6285119694411',
-  email: 'info@smpsainslombok.sch.id',
+  email: 'smpsainsoperator@gmail.com',
   address: 'Jl. Gora II, Pondok Buak, Batu Kumbung, Lingsar, Lombok Barat, NTB',
   region: 'Lombok Barat, Nusa Tenggara Barat',
   facebookUrl: 'https://www.facebook.com/people/Smpsains-Lis/61565657844961/',
@@ -52,14 +52,23 @@ export const PROFILE = {
     'SMP Sains Lombok Islamic School menyelenggarakan pendidikan berbasis sains terapan. Siswa dilatih bereksperimen dan melakukan riset berbasis inquiry dan discovery.',
   quote: "Membentuk generasi saintis Muslim yang berkarakter Qur'ani dan berwawasan global.",
   vision:
-    "Mewujudkan siswa yang mandiri, unggul dalam sains, berkarakter Qur'ani, dan berwawasan global.",
+    'Mewujudkan siswa yang mandiri, unggul dalam sains, berkarakter qur’ani, dan berwawasan global.',
   missions: [
-    'Menyelenggarakan pembelajaran berbasis riset inquiry dan discovery yang melatih peserta didik berpikir kritis, kreatif, dan berinovasi di bidang sains dan teknologi.',
-    'Memberikan pendidikan bermutu tinggi yang mendorong peserta didik meraih prestasi terbaik, baik di bidang akademik maupun non-akademik.',
-    "Membentuk karakter peserta didik melalui nilai-nilai Al-Qur'an, guna menumbuhkan akhlak mulia, kemandirian, dan rasa tanggung jawab.",
-    "Menerapkan pembelajaran terpadu yang memadukan ilmu sains dengan ajaran Islam yang bersumber dari Al-Qur'an dan Hadis.",
-    'Mengembangkan kemampuan komunikasi dua bahasa asing, yaitu Bahasa Inggris dan Bahasa Jepang, guna membekali peserta didik menghadapi kehidupan di masa depan.',
-    'Melaksanakan pembelajaran berbasis proyek yang berfokus pada isu-isu global, seperti kelestarian lingkungan dan kepedulian kemanusiaan.',
+    'Menyelenggarakan pembelajaran berbasis riset yang mandiri guna mendorong peserta didik berpikir kritis, memecahkan masalah kompleks, dan berinovasi di bidang IPTEK.',
+
+    'Menyelenggarakan kegiatan ekstrakurikuler untuk memberikan ruang dan waktu kepada peserta didik dalam mengembangkan prestasi di bidang akademik maupun non-akademik.',
+
+    "Menyelenggarakan program Tahsin dan Tahfidz dalam upaya membangun dan membentuk karakter Qur'ani.",
+
+    "Menerapkan pembelajaran yang terintegrasi dengan kajian Islami yang bersumber dari Al-Qur'an dan Hadis.",
+
+    'Menyelenggarakan proses pembelajaran menggunakan tiga bahasa untuk mengembangkan keterampilan berbahasa peserta didik.',
+
+    'Menerapkan pembelajaran berbasis proyek yang berfokus pada isu-isu global, seperti keberlanjutan lingkungan dan kemanusiaan, untuk menguatkan kemampuan dan kemandirian peserta didik.',
+
+    'Menyelenggarakan pembelajaran berbasis teknologi informasi (IT) untuk menambah wawasan dan meningkatkan keterampilan digital peserta didik.',
+
+    'Menyelenggarakan pembelajaran berbasis digital yang terintegrasi pada setiap mata pelajaran.',
   ],
 } as const;
 
