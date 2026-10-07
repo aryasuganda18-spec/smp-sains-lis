@@ -1,0 +1,60 @@
+:root {
+  --forest-950: #05140d;
+  --forest-900: #0a2b1c;
+  --forest-800: #0f3d28;
+  --forest-700: #0b6b3d;
+  --forest-600: #158452;
+  --gold-400: #f0c53a;
+  --gold-300: #f6d672;
+  --paper: #f7f2e4;
+  --sand: #ede4cb;
+  --card: #fffdf7;
+
+  --ink: #12251c;
+  --ink-muted: #4a5d53;
+  --ink-placeholder: #5f6f66;
+  --line: rgb(18 37 28 / 14%);
+  --line-strong: #7d8f84;
+  --on-dark: #f3eddc;
+  --on-dark-muted: #b4c4ba;
+  --line-on-dark: rgb(243 237 220 / 16%);
+
+  --danger: #a62b1f;
+  --danger-bg: #fbe9e6;
+  --success: #0b6b3d;
+  --success-bg: #e3f3e8;
+  --warning: #7a5600;
+  --warning-bg: #fff4d1;
+
+  --font-display: 'Instrument Serif', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 6.5rem;
+
+  --container: 72rem;
+  --gutter: clamp(1rem, 4vw, 2rem);
+  --header-h: 4.25rem;
+
+  --shadow-card: 0 1px 2px rgb(18 37 28 / 8%), 0 8px 24px -12px rgb(18 37 28 / 18%);
+  --shadow-pop: 0 18px 48px -12px rgb(5 20 13 / 45%);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 140ms;
+  --duration-base: 220ms;
+
+  --focus-ring: var(--forest-700);
+  color-scheme: light;
+}

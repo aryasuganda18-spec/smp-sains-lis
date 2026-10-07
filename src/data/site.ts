@@ -1,0 +1,179 @@
+import {
+  BedDouble,
+  BookOpenCheck,
+  Bot,
+  FlaskConical,
+  Languages,
+  Library,
+  type LucideIcon,
+  PartyPopper,
+  School,
+  Sigma,
+  Trees,
+} from 'lucide-react';
+import { PHOTOS, type Photo } from './photos';
+
+export const SCHOOL = {
+  name: 'SMP Sains Lombok Islamic School',
+  shortName: 'SMP Sains LIS',
+  suffix: 'Lombok Islamic School',
+  tagline: 'Sekolah sains terpadu berbasis IT di Lombok Barat',
+  foundedYear: 2019,
+} as const;
+
+export const CONTACT = {
+  phoneDisplay: '0851-1969-4411',
+  whatsappId: '6285119694411',
+  email: 'info@smpsainslombok.sch.id',
+  address: 'Jl. Gora II, Pondok Buak, Batu Kumbung, Lingsar, Lombok Barat, NTB',
+  region: 'Lombok Barat, Nusa Tenggara Barat',
+  facebookUrl: 'https://www.facebook.com/people/Smpsains-Lis/61565657844961/',
+  instagramUrl: 'https://www.instagram.com/smp.sains',
+} as const;
+
+export const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  `${SCHOOL.name}, ${CONTACT.address}`,
+)}`;
+
+export const WHATSAPP_MESSAGES = {
+  inquiry: `Assalamu'alaikum, saya ingin bertanya soal PPDB ${SCHOOL.name}.`,
+  registered: (parentName: string, studentName: string) =>
+    `Assalamu'alaikum, saya ${parentName} sudah mengisi formulir PPDB ${SCHOOL.shortName} atas nama ${studentName}.`,
+} as const;
+
+export const PPDB = {
+  academicYear: '',
+  headline: 'Kuota angkatan baru terbatas.',
+  lead: 'Isi formulir, atau chat admin. Kami kirim brosur, rincian biaya, dan jadwal tes.',
+} as const;
+
+export const PROFILE = {
+  intro:
+    'SMP Sains Lombok Islamic School menyelenggarakan pendidikan berbasis sains terapan. Siswa dilatih bereksperimen dan melakukan riset berbasis inquiry dan discovery.',
+  quote: "Membentuk generasi saintis Muslim yang berkarakter Qur'ani dan berwawasan global.",
+  vision:
+    "Mewujudkan siswa yang mandiri, unggul dalam sains, berkarakter Qur'ani, dan berwawasan global.",
+  missions: [
+    'Menyelenggarakan pembelajaran berbasis riset inquiry dan discovery yang melatih peserta didik berpikir kritis, kreatif, dan berinovasi di bidang sains dan teknologi.',
+    'Memberikan pendidikan bermutu tinggi yang mendorong peserta didik meraih prestasi terbaik, baik di bidang akademik maupun non-akademik.',
+    "Membentuk karakter peserta didik melalui nilai-nilai Al-Qur'an, guna menumbuhkan akhlak mulia, kemandirian, dan rasa tanggung jawab.",
+    "Menerapkan pembelajaran terpadu yang memadukan ilmu sains dengan ajaran Islam yang bersumber dari Al-Qur'an dan Hadis.",
+    'Mengembangkan kemampuan komunikasi dua bahasa asing, yaitu Bahasa Inggris dan Bahasa Jepang, guna membekali peserta didik menghadapi kehidupan di masa depan.',
+    'Melaksanakan pembelajaran berbasis proyek yang berfokus pada isu-isu global, seperti kelestarian lingkungan dan kepedulian kemanusiaan.',
+  ],
+} as const;
+
+export interface Highlight {
+  icon: LucideIcon;
+  title: string;
+  text: string;
+}
+
+export const HIGHLIGHTS: readonly Highlight[] = [
+  {
+    icon: FlaskConical,
+    title: 'Sains terapan',
+    text: 'Riset, inquiry, dan discovery di laboratorium.',
+  },
+  {
+    icon: BookOpenCheck,
+    title: "Karakter Qur'ani",
+    text: "Nilai Al-Qur'an hadir dalam pembelajaran sehari-hari.",
+  },
+  { icon: Languages, title: 'Dua bahasa asing', text: 'Bahasa Inggris dan Bahasa Jepang.' },
+  {
+    icon: BedDouble,
+    title: 'Asrama putra & putri',
+    text: 'Asrama putra & putri terpisah, dengan pembina yang tinggal di asrama.',
+  },
+];
+
+export interface Program {
+  icon: LucideIcon;
+  title: string;
+  text: string;
+}
+
+export const PROGRAMS: readonly Program[] = [
+  {
+    icon: Sigma,
+    title: 'Olimpiade Sains dan Matematika',
+    text: 'Program pembinaan bagi seluruh peserta didik di bidang sains dan matematika melalui pendalaman materi dan latihan soal untuk mempersiapkan mereka mengikuti kompetisi tingkat kabupaten hingga nasional.',
+  },
+  {
+    icon: Languages,
+    title: 'Bahasa Inggris',
+    text: 'Program yang melatih peserta didik berbicara, mendengar, membaca, dan menulis dalam bahasa Inggris melalui kegiatan rutin seperti English Day agar terbiasa berkomunikasi dalam bahasa asing.',
+  },
+  {
+    icon: Languages,
+    title: 'Bahasa Jepang',
+    text: 'Program pengenalan bahasa Jepang mulai dari huruf hiragana, katakana, kosakata dasar, hingga percakapan sederhana, sekaligus mengenalkan budaya Jepang kepada peserta didik.',
+  },
+  {
+    icon: PartyPopper,
+    title: 'Funday',
+    text: 'Kegiatan rutin berisi permainan dan lomba yang mengajak peserta didik belajar sambil bermain dalam suasana menyenangkan dan penuh kebersamaan serta kegiatan outing class.',
+  },
+];
+
+export const ACADEMICS = {
+  title: 'Fasilitas yang dipakai, bukan dipajang.',
+  lead: 'Pembelajaran yang berbasis riset dan experiment, di padukan dengan pembelajaran digital melalui perangkat seluler seperti hand phone, tablet, dan komputer.',
+  curriculum:
+    'Kurikulum nasional, di kombinasikan dengan sains terapan, tahfidz, dan zona bahasa Arab & Inggris. Praktikum lab dan project semester wajib.',
+} as const;
+
+export interface Facility {
+  icon: LucideIcon;
+  text: string;
+  photo?: Photo;
+}
+
+export const FACILITIES: readonly Facility[] = [
+  { icon: School, text: 'Kelas ber-AC, 24 siswa per rombel', photo: PHOTOS.classroom },
+  { icon: FlaskConical, text: 'Lab fisika, kimia, biologi, dan komputer', photo: PHOTOS.lab },
+  { icon: Library, text: "Perpustakaan dan ruang baca Qur'an", photo: PHOTOS.library },
+  { icon: BedDouble, text: 'Asrama putra dan putri terpisah' },
+  { icon: Trees, text: 'Musalla, lapangan, dan kebun sekolah', photo: PHOTOS.musalla },
+  { icon: Bot, text: 'Project Based Learning tiap semester', photo: PHOTOS.robotics },
+];
+
+export const ADMISSION_STEPS = [
+  {
+    title: 'Isi formulir',
+    text: 'Lengkapi data calon siswa dan orang tua lewat formulir pendaftaran.',
+  },
+  {
+    title: 'Jadwal tes & wawancara',
+    text: 'Admin menghubungi melalui nomor WhatsApp yang di daftarkan untuk mengatur jadwal.',
+  },
+  {
+    title: 'Pengumuman & daftar ulang',
+    text: 'Hasil dan rincian biaya disampaikan langsung ke orang tua.',
+  },
+] as const;
+
+export const FAQ = [
+  {
+    question: `PPDB ${PPDB.academicYear} dibuka kapan?`,
+    answer:
+      'Gelombang 1 dibuka September–November 2026. Kuota per angkatan terbatas. Isi formulir pendaftaran di beranda atau hubungi admin lewat WhatsApp untuk jadwal tes.',
+  },
+  {
+    question: 'Apakah ada asrama?',
+    answer:
+      'Ada. Asrama putra dan putri terpisah, dengan pembina yang tinggal di kampus. Siswa non-asrama diterima dengan radius tempuh yang disepakati saat wawancara.',
+  },
+  {
+    question: 'Kurikulum yang dipakai apa?',
+    answer: ACADEMICS.curriculum,
+  },
+  {
+    question: 'Berapa biaya masuknya?',
+    answer:
+      'Rincian uang pangkal, SPP, dan asrama disampaikan saat sesi informasi atau lewat admin. Kami tidak memasang angka di situs supaya orang tua mendapat rincian yang berlaku untuk gelombang berjalan.',
+  },
+] as const;
+
+export const ARTICLE_CATEGORIES = ['Umum', 'Akademik', 'Prestasi', 'Kegiatan', 'PPDB'] as const;
