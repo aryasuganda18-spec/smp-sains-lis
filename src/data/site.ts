@@ -15,10 +15,10 @@ import { PHOTOS, type Photo } from './photos';
 
 export const SCHOOL = {
   name: 'SMP Sains Lombok Islamic School',
-  shortName: 'SMP Sains',
+  shortName: 'SMP SAINS',
   suffix: 'Lombok Islamic School',
   tagline: 'Sekolah sains terpadu berbasis IT di Lombok Barat',
-  foundedYear: 2019,
+  foundedYear: 2024,
 } as const;
 
 export const CONTACT = {

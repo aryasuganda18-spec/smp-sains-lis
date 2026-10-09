@@ -22,7 +22,11 @@ export function Gallery() {
           <AsyncView
             query={albums}
             isEmpty={(data) => data.length === 0}
-            empty={<p className="muted">Album kegiatan akan tampil di sini setelah sekolah mengunggahnya.</p>}
+            empty={
+              <p className="muted">
+                Album kegiatan akan tampil di sini setelah sekolah mengunggahnya.
+              </p>
+            }
           >
             {(data) => (
               <ul className="card-grid card-grid--3">
@@ -30,12 +34,21 @@ export function Gallery() {
                   <li key={album.id} className="album-card">
                     <Link to={albumPath(album.id)}>
                       {album.cover_image_url ? (
-                        <img src={album.cover_image_url} alt="" width={800} height={600} loading="lazy" decoding="async" />
+                        <img
+                          src={album.cover_image_url}
+                          alt=""
+                          width={800}
+                          height={600}
+                          loading="lazy"
+                          decoding="async"
+                        />
                       ) : (
                         <div className="album-card__placeholder" aria-hidden="true" />
                       )}
                       <span className="album-card__title">{album.title}</span>
-                      {album.description && <span className="album-card__text">{album.description}</span>}
+                      {album.description && (
+                        <span className="album-card__text">{album.description}</span>
+                      )}
                     </Link>
                   </li>
                 ))}
@@ -47,7 +60,7 @@ export function Gallery() {
       <section className="section section--sand" aria-labelledby="kampus-foto-title">
         <div className="container">
           <h2 id="kampus-foto-title" className="section__title">
-            Foto kampus
+            Dokumentasi
           </h2>
           <PhotoGrid photos={CAMPUS_GALLERY.map((photo) => toGridPhoto(photo.caption, photo))} />
         </div>

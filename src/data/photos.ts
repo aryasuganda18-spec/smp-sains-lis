@@ -51,63 +51,29 @@ function definePhoto(
 export const LOGO_URL = findImage('logo');
 
 export const PHOTOS = {
-  campus: definePhoto('campus-dusk', 1600, 900, 'Gedung SMP Sains Lombok Islamic School', 'siswa top'),
-
-  lab: definePhoto(
-    'lab',
-    1400,
-    1050,
-    'Laboratorium sains dengan alat gelas dan mikroskop',
-    'Lab sains',
-  ),
-
-  computerLab: definePhoto(
-    'computer-lab',
+  campus: definePhoto(
+    'campus-dusk',
     1600,
     900,
-    'Laboratorium komputer dengan deretan monitor',
-    'Lab komputer',
+    'Gedung SMP Sains Lombok Islamic School',
+    'siswa top',
   ),
 
-  classroom: definePhoto(
-    'classroom',
-    1400,
-    1050,
-    'Ruang kelas dengan meja kayu dan papan digital',
-    'Ruang kelas',
-  ),
+  campus: definePhoto('school2', 1600, 900, 'Gedung SMP Sains Lombok Islamic School', 'SMP-SAINS'),
 
-  musalla: definePhoto(
-    'musalla',
-    1400,
-    1050,
-    'Musalla sekolah dengan sajadah hijau rapi',
-    'Musalla',
-  ),
+  lab: definePhoto('school3', 1400, 1050, 'dokumentasi', 'Dokumentasi Riset'),
 
-  library: definePhoto(
-    'library',
-    1200,
-    1200,
-    'Lorong perpustakaan dengan rak kayu dan lampu hangat',
-    'Perpustakaan',
-  ),
+  computerLab: definePhoto('school1', 1600, 900, 'program unggulan', 'Olimpiade Sains Nasional'),
 
-  robotics: definePhoto(
-    'robot',
-    1200,
-    1200,
-    'Sasis robot edukasi dan papan Arduino di meja bengkel',
-    'Bengkel robotik',
-  ),
+  classroom: definePhoto('school4', 1400, 1050, 'dokumentasi', 'Sumatif Akhir Semester'),
 
-  courtyard: definePhoto(
-    'school3',
-    1200,
-    1200,
-    'Halaman dalam dengan lantai geometris dan sayap kelas',
-    'Halaman dalam',
-  ),
+  musalla: definePhoto('school5', 1400, 1050, 'dokumentasi', 'Ekstrakurikuler Karya Ilmiah'),
+
+  library: definePhoto('school9', 1200, 1200, 'Our Teacher', 'Our Teacher'),
+
+  robotics: definePhoto('school8', 1200, 1200, '-', 'Hari Kartini'),
+
+  courtyard: definePhoto('school', 1200, 1200, '-', 'SMP SAINS'),
 } as const satisfies Record<string, Photo>;
 
 export const CAMPUS_GALLERY: readonly Photo[] = [
