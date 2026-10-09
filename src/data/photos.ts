@@ -51,14 +51,6 @@ function definePhoto(
 export const LOGO_URL = findImage('logo');
 
 export const PHOTOS = {
-  campus: definePhoto(
-    'campus-dusk',
-    1600,
-    900,
-    'Gedung SMP Sains Lombok Islamic School',
-    'siswa top',
-  ),
-
   campus: definePhoto('school2', 1600, 900, 'Gedung SMP Sains Lombok Islamic School', 'SMP-SAINS'),
 
   lab: definePhoto('school3', 1400, 1050, 'dokumentasi', 'Dokumentasi Riset'),
