@@ -140,12 +140,10 @@ export interface Facility {
 }
 
 export const FACILITIES: readonly Facility[] = [
-  { icon: School, text: 'Kelas ber-AC, 24 siswa per rombel', photo: PHOTOS.classroom },
-  { icon: FlaskConical, text: 'Lab fisika, kimia, biologi, dan komputer', photo: PHOTOS.lab },
-  { icon: Library, text: "Perpustakaan dan ruang baca Qur'an", photo: PHOTOS.library },
-  { icon: BedDouble, text: 'Asrama putra dan putri terpisah' },
-  { icon: Trees, text: 'Musalla, lapangan, dan kebun sekolah', photo: PHOTOS.musalla },
-  { icon: Bot, text: 'Project Based Learning tiap semester', photo: PHOTOS.robotics },
+  { icon: School, photo: PHOTOS.classroom },
+  { icon: FlaskConical, photo: PHOTOS.lab },
+  { icon: School, photo: PHOTOS.library },
+  { icon: Bot, photo: PHOTOS.musalla },
 ];
 
 export const ADMISSION_STEPS = [
