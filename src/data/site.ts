@@ -4,12 +4,10 @@ import {
   Bot,
   FlaskConical,
   Languages,
-  Library,
   type LucideIcon,
   PartyPopper,
   School,
   Sigma,
-  Trees,
 } from 'lucide-react';
 import { PHOTOS, type Photo } from './photos';
 
