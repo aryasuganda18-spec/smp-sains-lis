@@ -21,8 +21,8 @@ export function Academics() {
             <h2 id="fasilitas-title">Fasilitas</h2>
           </header>
           <ul className="card-grid card-grid--3">
-            {FACILITIES.map(({ icon: Icon, text, photo }) => (
-              <li key={text} className="card card--media">
+            {FACILITIES.map(({ icon: Icon, photo }, index) => (
+              <li key={index} className="card card--media">
                 {photo && (
                   <img
                     src={photo.src}
@@ -37,7 +37,6 @@ export function Academics() {
                 )}
                 <p className="card__row">
                   <Icon size={22} aria-hidden="true" />
-                  {text}
                 </p>
               </li>
             ))}
