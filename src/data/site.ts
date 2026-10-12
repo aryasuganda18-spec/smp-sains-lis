@@ -139,12 +139,10 @@ export interface Facility {
   photo?: Photo;
 }
 
-export const FACILITIES: readonly Facility[] = [
-  { icon: School, photo: PHOTOS.classroom },
-  { icon: FlaskConical, photo: PHOTOS.lab },
-  { icon: School, photo: PHOTOS.library },
-  { icon: Bot, photo: PHOTOS.musalla },
-];
+{ icon: School, photo: PHOTOS.classroom, text: "." },
+{ icon: FlaskConical, photo: PHOTOS.lab, text: "." },
+{ icon: School, photo: PHOTOS.library, text: "." },
+{ icon: Bot, photo: PHOTOS.musalla, text: "." },
 
 export const ADMISSION_STEPS = [
   {
