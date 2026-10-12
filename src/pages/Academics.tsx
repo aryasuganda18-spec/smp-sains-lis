@@ -21,7 +21,7 @@ export function Academics() {
             <h2 id="fasilitas-title">Fasilitas</h2>
           </header>
           <ul className="card-grid card-grid--3">
-            {FACILITIES.map(({ icon: Icon, photo }, index) => (
+            {FACILITIES.map(({ photo }, index) => (
               <li key={index} className="card card--media">
                 {photo && (
                   <img
@@ -35,9 +35,6 @@ export function Academics() {
                     decoding="async"
                   />
                 )}
-                <p className="card__row">
-                  <Icon size={22} aria-hidden="true" />
-                </p>
               </li>
             ))}
           </ul>
