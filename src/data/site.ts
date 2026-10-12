@@ -135,14 +135,16 @@ export const ACADEMICS = {
 
 export interface Facility {
   icon: LucideIcon;
-  text: string;
   photo?: Photo;
+  // Baris 'text: string;' dihapus agar tidak wajib diisi
 }
 
-{ icon: School, photo: PHOTOS.classroom, text: "." },
-{ icon: FlaskConical, photo: PHOTOS.lab, text: "." },
-{ icon: School, photo: PHOTOS.library, text: "." },
-{ icon: Bot, photo: PHOTOS.musalla, text: "." },
+export const FACILITIES: Facility[] = [
+  { icon: School, photo: PHOTOS.classroom },
+  { icon: FlaskConical, photo: PHOTOS.lab },
+  { icon: School, photo: PHOTOS.library },
+  { icon: Bot, photo: PHOTOS.musalla },
+];
 
 export const ADMISSION_STEPS = [
   {
