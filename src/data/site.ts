@@ -25,9 +25,14 @@ export const CONTACT = {
   email: 'smpsainsoperator@gmail.com',
   address: 'Jl. Gora II, Pondok Buak, Batu Kumbung, Lingsar, Lombok Barat, NTB',
   region: 'Lombok Barat, Nusa Tenggara Barat',
-  facebookUrl: 'https://www.facebook.com/people/Smpsains-Lis/61565657844961/',
-  instagramUrl: 'https://www.instagram.com/smp.sains',
 } as const;
+
+export const SOCIAL_LINKS = [
+  { id: 'instagram', label: 'Instagram sekolah', url: 'https://www.instagram.com/smpsainslis/' },
+  { id: 'tiktok', label: 'TikTok sekolah', url: 'https://www.tiktok.com/@smpsains.lis' },
+  { id: 'facebook', label: 'Facebook sekolah', url: 'https://www.facebook.com/p/Smpsains-Lis-61565657844961/' },
+  { id: 'youtube', label: 'YouTube sekolah', url: 'https://www.youtube.com/@SMPSAINSLIS' },
+] as const;
 
 export const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
   `${SCHOOL.name}, ${CONTACT.address}`,

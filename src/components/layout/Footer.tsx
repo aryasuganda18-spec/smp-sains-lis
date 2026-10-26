@@ -1,11 +1,11 @@
 import { Mail, MapPin, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ADMIN_ROUTES } from '@/app/routes';
-import { FacebookIcon, InstagramIcon } from '@/components/icons';
 import { FOOTER_COLUMNS } from '@/data/navigation';
 import { CONTACT, MAPS_URL, SCHOOL, WHATSAPP_MESSAGES } from '@/data/site';
 import { whatsAppLink } from '@/lib/whatsapp';
 import { Brand } from './Brand';
+import { SocialLinks } from './SocialLinks';
 
 export function Footer() {
   return (
@@ -14,14 +14,7 @@ export function Footer() {
         <div className="footer__about">
           <Brand />
           <p>{SCHOOL.tagline}.</p>
-          <div className="footer__social">
-            <a href={CONTACT.facebookUrl} target="_blank" rel="noopener noreferrer" aria-label="Facebook sekolah" className="icon-button">
-              <FacebookIcon />
-            </a>
-            <a href={CONTACT.instagramUrl} target="_blank" rel="noopener noreferrer" aria-label="Instagram sekolah" className="icon-button">
-              <InstagramIcon />
-            </a>
-          </div>
+          <SocialLinks className="footer__social" />
         </div>
 
         {FOOTER_COLUMNS.map((column) => (
