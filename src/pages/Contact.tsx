@@ -1,6 +1,6 @@
 import { Mail, MapPin, MessageCircle } from 'lucide-react';
 import { HOME_SECTIONS, homeSectionPath } from '@/app/routes';
-import { FacebookIcon, InstagramIcon } from '@/components/icons';
+import { SocialLinks } from '@/components/layout/SocialLinks';
 import { PageBanner } from '@/components/layout/PageBanner';
 import { ButtonLink } from '@/components/ui/Button';
 import { CONTACT, FAQ, MAPS_URL, WHATSAPP_MESSAGES } from '@/data/site';
@@ -36,14 +36,7 @@ export function Contact() {
             <p>
               <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
             </p>
-            <div className="card__social">
-              <a href={CONTACT.facebookUrl} target="_blank" rel="noopener noreferrer" className="icon-button icon-button--light" aria-label="Facebook sekolah">
-                <FacebookIcon />
-              </a>
-              <a href={CONTACT.instagramUrl} target="_blank" rel="noopener noreferrer" className="icon-button icon-button--light" aria-label="Instagram sekolah">
-                <InstagramIcon />
-              </a>
-            </div>
+            <SocialLinks className="card__social" buttonClassName="icon-button icon-button--light" />
           </article>
         </div>
       </section>
