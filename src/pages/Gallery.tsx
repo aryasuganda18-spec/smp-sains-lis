@@ -18,7 +18,7 @@ export function Gallery() {
     <>
       <PageBanner
         title="Galeri"
-        lead="Kegiatan belar."
+        lead="Kegiatan belajar di SMP SAINS LIS."
       />
       <section className="section" aria-labelledby="album-title">
         <div className="container">
