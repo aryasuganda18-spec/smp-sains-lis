@@ -52,7 +52,8 @@ export const PPDB = {
 
 export const PROFILE = {
   intro:
-    'SMP Sains Lombok Islamic School menyelenggarakan pendidikan berbasis sains terapan. Siswa dilatih bereksperimen dan melakukan riset berbasis inquiry dan discovery.',
+    'SMP SAINS Lombok Islamic School didirikan dengan tujuan mencetak generasi yang mandiri, unggul dalam sains, serta memiliki jiwa kepemimpinan dan semangat berinovasi. Sekolah ini mengedepankan pembelajaran berbasis eksperimen sains sebagai metode utama untuk menumbuhkan rasa ingin tahu, kemampuan berpikir kritis, dan keterampilan praktis peserta didik sejak usia dini. Ke depan, SMP SAINS Lombok Islamic School berkomitmen untuk terus berkembang menjadi sekolah percontohan yang menerapkan kurikulum berbasis sains secara konsisten, sehingga mampu melahirkan lulusan yang siap bersaing di tingkat regional maupun nasional dengan tetap berpegang teguh pada nilai nilai keislaman.',
+    
   quote: "Membentuk generasi saintis Muslim yang berkarakter Qur'ani dan berwawasan global.",
   vision:
     'Mewujudkan siswa yang mandiri, unggul dalam sains, berkarakter qur’ani, dan berwawasan global.',

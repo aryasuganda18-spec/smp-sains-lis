@@ -11,7 +11,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: https://zjlynslxnxtxijyxfhjo.supabase.co https://i.ytimg.com; font-src 'self'; connect-src 'self' https://zjlynslxnxtxijyxfhjo.supabase.co; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; frame-ancestors 'none'"
+          "value": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: https://project_id.supabase.co https://i.ytimg.com; font-src 'self'; connect-src 'self' https://project_id.supabase.co; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; frame-ancestors 'none'"
         },
         {
           "key": "X-Content-Type-Options",

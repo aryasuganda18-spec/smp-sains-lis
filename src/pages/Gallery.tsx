@@ -1,19 +1,25 @@
-import { Link } from 'react-router-dom';
-import { albumPath } from '@/app/routes';
-import { PageBanner } from '@/components/layout/PageBanner';
-import { AsyncView } from '@/components/ui/AsyncView';
-import { CAMPUS_GALLERY, toGridPhoto } from '@/data/photos';
-import { PhotoGrid } from '@/features/gallery/PhotoGrid';
-import { useAlbums } from '@/lib/api/hooks';
-import { useDocumentMeta } from '@/lib/hooks';
+import { Link } from "react-router-dom";
+import { albumPath } from "@/app/routes";
+import { PageBanner } from "@/components/layout/PageBanner";
+import { AsyncView } from "@/components/ui/AsyncView";
+import { CAMPUS_GALLERY, toGridPhoto } from "@/data/photos";
+import { PhotoGrid } from "@/features/gallery/PhotoGrid";
+import { useAlbums } from "@/lib/api/hooks";
+import { useDocumentMeta } from "@/lib/hooks";
 
 export function Gallery() {
-  useDocumentMeta('Galeri', 'Foto kegiatan dan fasilitas SMP Sains Lombok Islamic School.');
+  useDocumentMeta(
+    "Galeri",
+    "Foto kegiatan dan fasilitas SMP Sains Lombok Islamic School.",
+  );
   const albums = useAlbums();
 
   return (
     <>
-      <PageBanner title="Galeri" lead="Kegiatan belajar, fasilitas, dan momen di kampus." />
+      <PageBanner
+        title="Galeri"
+        lead="Kegiatan belar."
+      />
       <section className="section" aria-labelledby="album-title">
         <div className="container">
           <h2 id="album-title" className="section__title">
@@ -24,7 +30,8 @@ export function Gallery() {
             isEmpty={(data) => data.length === 0}
             empty={
               <p className="muted">
-                Album kegiatan akan tampil di sini setelah sekolah mengunggahnya.
+                Album kegiatan akan tampil di sini setelah sekolah
+                mengunggahnya.
               </p>
             }
           >
@@ -43,11 +50,16 @@ export function Gallery() {
                           decoding="async"
                         />
                       ) : (
-                        <div className="album-card__placeholder" aria-hidden="true" />
+                        <div
+                          className="album-card__placeholder"
+                          aria-hidden="true"
+                        />
                       )}
                       <span className="album-card__title">{album.title}</span>
                       {album.description && (
-                        <span className="album-card__text">{album.description}</span>
+                        <span className="album-card__text">
+                          {album.description}
+                        </span>
                       )}
                     </Link>
                   </li>
@@ -57,12 +69,19 @@ export function Gallery() {
           </AsyncView>
         </div>
       </section>
-      <section className="section section--sand" aria-labelledby="kampus-foto-title">
+      <section
+        className="section section--sand"
+        aria-labelledby="kampus-foto-title"
+      >
         <div className="container">
           <h2 id="kampus-foto-title" className="section__title">
             Dokumentasi
           </h2>
-          <PhotoGrid photos={CAMPUS_GALLERY.map((photo) => toGridPhoto(photo.caption, photo))} />
+          <PhotoGrid
+            photos={CAMPUS_GALLERY.map((photo) =>
+              toGridPhoto(photo.caption, photo),
+            )}
+          />
         </div>
       </section>
     </>

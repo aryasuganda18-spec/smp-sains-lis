@@ -1,11 +1,15 @@
-import { HOME_SECTIONS } from '@/app/routes';
-import { PHOTOS } from '@/data/photos';
-import { PROFILE } from '@/data/site';
+import { HOME_SECTIONS } from "@/app/routes";
+import { PHOTOS } from "@/data/photos";
+import { PROFILE } from "@/data/site";
 
 export function ProfileSection() {
   const photo = PHOTOS.courtyard;
   return (
-    <section id={HOME_SECTIONS.profile} className="section" aria-labelledby="profil-title">
+    <section
+      id={HOME_SECTIONS.profile}
+      className="section"
+      aria-labelledby="profil-title"
+    >
       <div className="container split">
         <div className="split__text">
           <h2 id="profil-title">Sekolah yang mengajak siswa bereksperimen.</h2>
